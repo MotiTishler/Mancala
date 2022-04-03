@@ -1,0 +1,27 @@
+.board{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: stretch;
+}
+
+
+app-home, app-hole{
+    width: 10vw;
+    margin: 5px;
+}
+
+.holesRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.firstRowHole{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.secondRowHole{
+    display: flex;
+    flex-direction: column;
+}

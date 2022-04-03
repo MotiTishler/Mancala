@@ -1,0 +1,8 @@
+.image{
+    background-image: url('../assets/pexels-pixabay-235992.jpg');
+    height: 100%;
+}
+
+app-header, app-board{
+    height: 49vh;
+}

@@ -1,0 +1,10 @@
+
+<div class="home" 
+    [ngStyle]="{'border': (gameService.nowPlayer1 == home.isPlayer1 ? '3px' : '1px')+' solid brown'}"
+>
+    <app-bead
+        *ngFor="let b of home.beads"
+        [bead]="b"
+    ></app-bead>
+</div>
+<div class="homeCount">{{home.getCount()}}</div>

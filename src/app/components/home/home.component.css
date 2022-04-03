@@ -1,0 +1,19 @@
+.home{
+    width: 10vw;
+    height: 90%;
+    text-align: center;    
+   
+    border-radius: 5vw;
+
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2px;
+}
+
+.homeCount{
+    width: 10vw;
+    height: 10%;
+    
+    text-align: center;
+
+}

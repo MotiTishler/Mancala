@@ -1,0 +1,26 @@
+<div class="container">
+
+    <app-player [isPlayer1]="true"></app-player>
+    <div class="center">
+        <h1>{{dictionary.getMyMancala()}}</h1>
+        <div class="container">
+            <mat-select [(ngModel)]="dictionary.selectedLanguage">
+                <mat-option
+                    *ngFor="let lang of dictionary.getLanguages()"
+                    [value] = "lang"
+                    >
+                    <img with="20" height="20" [src]="dictionary.getFlag(lang)">
+                    {{dictionary.getName(lang)}}
+                </mat-option>
+            </mat-select>
+            <button
+                (click)="gameService.initGame()"
+                >
+                {{dictionary.getStartButton()}}
+            </button>
+        </div>
+        <h2>{{gameService.message || dictionary.getInitialMessage() }}</h2>
+    </div>
+    <app-player [isPlayer1]="false"></app-player>
+    
+</div>

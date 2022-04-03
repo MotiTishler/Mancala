@@ -1,0 +1,23 @@
+
+<div class="board">
+    <app-home [home]="gameService.home1" ></app-home>
+    <div class="holes">
+        <div class="holesRow">
+            <app-hole 
+            *ngFor="let h of gameService.holes.slice(0,6)" 
+            [hole]="h"
+            class="firstRowHole"
+            ></app-hole>
+        </div>
+        
+        <div class="holesRow">
+            <app-hole 
+            *ngFor="let h of gameService.holes.slice(6,12).reverse()" 
+            [hole]="h"
+            class="secondRowHole"
+            ></app-hole>
+        </div>
+        
+    </div>
+    <app-home [home]="gameService.home2" ></app-home>
+</div>
