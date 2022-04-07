@@ -8,6 +8,9 @@
     display: flex;
     flex-flow: row wrap;
     gap: 2px;
+
+    box-shadow: inset 2vw 1vw 1vw rgba(0,0,0,0.2),
+                inset 2vw 1vw 2vw rgba(0,0,0,0.2);
 }
 
 .homeCount{

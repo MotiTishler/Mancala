@@ -5,6 +5,10 @@
     height: 10vw;
     width: 100%;
     text-align: center;   
+
+    box-shadow: inset 2vw 1vw 1vw rgba(0,0,0,0.2),
+                inset 2vw 1vw 2vw rgba(0,0,0,0.2);
+
 }
 
 .hole:hover{
