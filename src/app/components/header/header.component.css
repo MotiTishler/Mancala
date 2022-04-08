@@ -10,3 +10,18 @@ app-player, .center{
     text-align: center;
 }
 
+button{
+    background-color: brown;
+    color: wheat;
+    border: none;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button:disabled{
+  background-color: transparent;
+  color: transparent;
+  border: 1px solid brown;
+}

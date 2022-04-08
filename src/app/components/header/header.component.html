@@ -15,6 +15,7 @@
             </mat-select>
             <button
                 (click)="gameService.initGame()"
+                [disabled]="!(gameService.player1) || !(gameService.player2)"
                 >
                 {{dictionary.getStartButton()}}
             </button>
