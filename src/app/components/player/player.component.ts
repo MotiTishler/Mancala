@@ -18,9 +18,6 @@ export class PlayerComponent implements OnInit {
 
   }
 
-  updatePlayerName(name:string):void{
-    if (this.isPlayer1) this.gameService.player1 = name
-    else this.gameService.player2 = name;
-  }
+  
 
 }

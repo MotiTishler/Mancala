@@ -1,6 +1,7 @@
 <div class="player">
     <h2>{{isPlayer1? dictionary.getPlayer1() : dictionary.getPlayer2()}}</h2>
-    <input  type="text" #name (change)="updatePlayerName(name.value)">
+    <input  type="text" *ngIf="this.isPlayer1" [(ngModel)]="this.gameService.player1">
+    <input  type="text" *ngIf="!this.isPlayer1" [(ngModel)]="this.gameService.player2">
     <!--div *ngIf="!isPlayer1">
         <input type="checkbox" id="againstComputer" [(ngModel)]="gameService.vsComputer">
         <label for="againstComputer">{{dictionary.getVsComputer()}}</label>
