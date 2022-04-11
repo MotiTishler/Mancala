@@ -19,7 +19,7 @@ export class Hole extends Place{
         if ((isPlayer1 && this.index == 11) ||
             (!isPlayer1 && this.index == 5)) 
             return 12;
-        return this.index+1; 
+        return this.index==11? 0: this.index+1; 
     }
 
     getParams(isPlayer1:boolean){
