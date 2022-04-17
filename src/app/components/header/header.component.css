@@ -21,7 +21,5 @@ button{
 }
 
 button:disabled{
-  background-color: transparent;
-  color: transparent;
-  border: 1px solid brown;
+  opacity: 0.5;
 }
