@@ -62,7 +62,7 @@ export class GameService {
       this.makeAMove(res.index);
     }else if (res.index==12){
       //Check if game ends
-      if (this.home1.getCount() +this.home2.getCount() == 48) this.message = this.getWinner();
+      if (this.home1.getCount() + this.home2.getCount() == 48) this.message = this.getWinner();
     }else if (res.count == 1){
       //End of move. Toggle player.
       this.togglePlayer();
