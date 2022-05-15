@@ -1,10 +1,11 @@
 <div class="hole" (click)="startAMove()">
     <p>{{hole.index}}</p>
-    <div class="beads">
+    <!--div class="beads"-->
         <app-bead
-        *ngFor="let b of hole.beads"
+        *ngFor="let b of hole.beads; index as i"
         [bead]="b"
+        [myPosition]="getPosition(i,hole.beads.length)"
         ></app-bead>
-    </div>
+    <!--/div-->
 </div>
 <div class="count">{{hole.getCount()}}</div>

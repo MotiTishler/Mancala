@@ -2,9 +2,14 @@
 <div class="home" 
     [ngStyle]="{'border': (gameService.nowPlayer1 == home.isPlayer1 ? '3px' : '1px')+' solid brown'}"
 >
-    <app-bead
+    <div class="arc"></div>
+    <div class="beadsDiv">
+        <app-bead
         *ngFor="let b of home.beads"
         [bead]="b"
-    ></app-bead>
+        [myPosition]="'noPos'"
+        ></app-bead>
+    </div>
+    <div class="arc"></div>
 </div>
 <div class="homeCount">{{home.getCount()}}</div>

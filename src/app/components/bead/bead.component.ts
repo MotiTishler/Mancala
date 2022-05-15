@@ -9,6 +9,7 @@ import { Bead } from 'src/app/models/bead';
 export class BeadComponent implements OnInit {
 
   @Input() bead:Bead;
+  @Input() myPosition:string;
 
   constructor() {
     
