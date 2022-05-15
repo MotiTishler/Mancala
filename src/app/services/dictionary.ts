@@ -3,9 +3,9 @@ export const dictionary = {
         name:"English",
         rtl:false,
         flags:[
-            "../../assets/icons8-usa-48.png",
-            "../../assets/icons8-australia-48.png",
-            "../../assets/icons8-great-britain-48.png"
+            "./assets/icons8-usa-48.png",
+            "./assets/icons8-australia-48.png",
+            "./assets/icons8-great-britain-48.png"
         ],
         displayStrings:{
             MyMancala:"My Mancala",
@@ -22,7 +22,7 @@ export const dictionary = {
     Heb:{
         name:"עברית",
         rtl:true,
-        flags:["../../assets/icons8-israel-48.png"],
+        flags:["./assets/icons8-israel-48.png"],
         displayStrings:{
             MyMancala:"מנקלה שלי",
             Player1:"מתחרה 1",
@@ -38,7 +38,7 @@ export const dictionary = {
     Yid:{
         name:"יידיש",
         rtl:true,
-        flags:["../../assets/icons8-star-of-david-30.png"],
+        flags:["./assets/icons8-star-of-david-30.png"],
         displayStrings:{
             MyMancala:"מיין מאנקאלא",
             Player1:"שפילער 1",
